@@ -47,9 +47,9 @@ public class MergeSort {
     }
 
     /**
-     * 计算中间位
+     * 计算中间位 toBeSorted.length >> 1 ===toBeSorted.length / 2
      */
-    int middle = (int) Math.floor(toBeSorted.length / 2);
+    int middle = (int) Math.floor(toBeSorted.length >> 1);
     /**
      * 左边数据
      */
