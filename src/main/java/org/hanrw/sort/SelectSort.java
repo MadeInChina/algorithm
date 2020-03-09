@@ -6,6 +6,9 @@ import java.util.Arrays;
 /**
  * @author hanrw
  * @date 2020/3/9 2:19 PM
+ * 时间复杂度O(N^2)
+ * 空间复杂度O(N)
+ * 不稳定排序
  */
 public class SelectSort {
 
