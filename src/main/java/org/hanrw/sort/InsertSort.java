@@ -45,18 +45,18 @@ public class InsertSort {
       /** 获取当前元素的值 */
       int curData = toBeSorted[i];
       /** 和前面的一个元素依次比较 */
-      int j = i - 1;
-      for (; j >= 0; j--) {
+      int preIndex = i - 1;
+      for (; preIndex >= 0; preIndex--) {
         /** 如果前一个元素大于当前的元素,则把前一个元素往后移 */
-        int preData = toBeSorted[j];
+        int preData = toBeSorted[preIndex];
         if (preData > curData) {
-          toBeSorted[j + 1] = preData;
+          toBeSorted[preIndex + 1] = preData;
         } else {
           /** 当前元素已经大于前一个元素，就不需要再进行比较了 */
           break;
         }
       }
-      toBeSorted[j + 1] = curData;
+      toBeSorted[preIndex + 1] = curData;
       System.out.println("No: " + i + " current order" + Arrays.toString(toBeSorted));
     }
 
