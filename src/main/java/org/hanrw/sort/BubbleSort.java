@@ -5,6 +5,10 @@ import java.util.Arrays;
 /**
  * @author hanrw
  * @date 2020/3/9 2:42 PM
+ * 时间复杂度O(N^2)
+ * 空间复杂度O(N)
+ * 交换次数(N2~N!)
+ * 稳定排序
  */
 public class BubbleSort {
 
