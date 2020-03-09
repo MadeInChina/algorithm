@@ -34,9 +34,16 @@ public class BubbleSort {
   }
 
   private static void swap(int[] toBeSorted, int from, int to) {
-    int temp = toBeSorted[to];
-    toBeSorted[to] = toBeSorted[from];
-    toBeSorted[from] = temp;
+//    int temp = toBeSorted[to];
+//    toBeSorted[to] = toBeSorted[from];
+//    toBeSorted[from] = temp;
+    /**
+     * 不用临时变量的方法
+     */
+    toBeSorted[to] = toBeSorted[from] + toBeSorted[to];
+    toBeSorted[from] = toBeSorted[to] - toBeSorted[from];
+    toBeSorted[to] = toBeSorted[to] - toBeSorted[from];
+
   }
 
 }
