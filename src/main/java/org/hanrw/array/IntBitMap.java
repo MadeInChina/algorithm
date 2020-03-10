@@ -95,6 +95,35 @@ public class IntBitMap {
     }
   }
 
+  /**
+   * 查找是否存在
+   * @param n
+   * 找到n所在的位置
+   * 1左移bitLoc个单位,其余位都是0,相当于不参加计算
+   * 0000 0000 0000 0000 0000 0000 0000 0010
+   * &
+   * 0000 0000 0000 0000 0000 0000 0000 0001 左移一位
+   * 如果相等返回1 否则返回0
+   * @return
+   */
+  public boolean find2(int n){
+    int index = n>>5;
+
+    int bitLoc = n % 32;
+    /**
+     * 如果插入的数是1,那么二进制格式如下
+     * 0000 0000 0000 0000 0000 0000 0000 0010
+     * &
+     * 0000 0000 0000 0000 0000 0000 0000 0001 << 1
+     */
+    int flag = ints[index] & 1 << bitLoc;
+    if (flag == 1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   public static void main(String[] args) {
     IntBitMap bitMap = new IntBitMap(100);
     bitMap.add(1);
