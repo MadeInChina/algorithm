@@ -43,8 +43,8 @@ public class IntBitMap {
   public void add(int n){
     /**
      * 1个int表示32个元素
-     * 数据所在ints里面的位置 n/32
-     * 数据所在bit里面的位置 n%32
+     * 数据所在ints里面的位置 n>>5等于n/32
+     * 数据所在bit里面的位置 n%32 n&32-1
      */
     int index = n>>5;
 
