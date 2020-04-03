@@ -7,6 +7,7 @@ import java.util.Random;
  * @author hanrw
  * @date 2020/3/12 6:16 PM
  * TopK 问题一般采用大顶堆来实现 时间复杂度O(log(n))
+ * PriorityQueue 通过二叉小顶堆实现,可以用一棵完全二叉树表示
  */
 public class HeapSort {
 
