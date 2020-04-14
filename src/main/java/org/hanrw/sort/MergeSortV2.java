@@ -80,6 +80,7 @@ public class MergeSortV2 {
     // 当前的位置
     int loc = leftIndex;
 
+    // 左右两边元素大小比较
     while (leftPointer <= middleIndex && rightPointer <= rightIndex) {
       if (toBeSorted[leftPointer] < toBeSorted[rightPointer]) {
         temp[loc] = toBeSorted[leftPointer];
