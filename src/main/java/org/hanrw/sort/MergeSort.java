@@ -5,6 +5,7 @@ import static java.util.Arrays.copyOfRange;
 import java.util.Arrays;
 
 /**
+ * 时间复杂度log(N)
  * @author hanrw
  * @date 2020/3/8 5:48 PM
  */
