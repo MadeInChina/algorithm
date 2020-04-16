@@ -40,7 +40,7 @@ public class BubbleSortV2 {
                            {4, 5, 3, 6, 2, 1}
     当前下标开始位置 i        ^
     相邻元素的下标开始位置i+1     ^
-    排序次数等于n-1
+    排序次数等于n-1 (两个元素只需要排序一次)
      */
     int length = toBeSorted.length;
     for (int i = 0; i < length - 1; i++) {
